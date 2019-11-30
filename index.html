@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="signIn">
+        <div class="headline">
+            <p>Sign in</p>
+        </div>
+        <div class="fillIn">
+            <div>
+                <form name="fillName">
+                    <p>First Name</p>
+                    <input class="firstName" type="text" placeholder="type here...">
+                    <p>Second Name</p>
+                    <input class="secondName" type="text" placeholder="type here...">
+                </form>
+            </div>
+            <div>
+                <p>Email address</p>
+                <input class="emailInput" type="email" placeholder="type here...">
+            </div>
+            <div class="checkRadio">
+                <input type="radio" name="gender" id="man" value="man">
+                <label for="man">man</label>
+                <input type="radio" name="gender" id="woman" value="woman" checked>
+                <label for="woman">woman</label>
+            </div>
+            <div class="choose">
+                <p>Position</p>
+                <select id="select">
+                    <option selected disabled>Choose...</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>QC/QA</option>
+                </select>
+            </div>
+            <div class="checked">
+                <input id="check" type="checkbox">
+                <label for="check">I agree all statements in Terms of service</label>
+            </div>
+            <div class="signInButton">
+                <button class="button" type="button" onclick="clickSignIn()" disabled>Sign In</button>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="greenFelid">
+            <div class="circleMan"></div>
+            <div class="circleWoman"></div>
+        </div>
+        <div class="mainInfo">
+            <div class="infoFill">
+                <p><span class="name"></span><span class="surname"></span></p>
+                <p class="email"></p>
+                <p class="position">Text</p>
+            </div>
+            <hr>
+            <div>
+                <button class="buttonSignOut" type="button" onclick="clickSignOut()">Sign Out</button>
+            </div>
+        </div>
+        <div class="smallGreen">
+            <div class="whiteFelid"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
